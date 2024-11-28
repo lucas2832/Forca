@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><Strong>Forca</Strong></h1>
+    <section id="escolha">
+        <label for="letra">Escolha uma Palavra:  </label>
+        <input type="text" name="palavra" id="palavra">
+        <button type="button" value="Pronto" onclick="salvar()">Começar</button>
+    </section>
+    <div class="grid-container">
+        <section class="main">
+            <div class="forcaCaveira">
+                <img src="imagens\forca.png" alt="Forca">
+                <img src="imagens\cabeca.png" alt="Cabeça" class="parte cabeca">
+                <img src="imagens\costelas.png" alt="Costelas" class="parte costelas">
+                <img src="imagens\bracodireito.png" alt="Braço Esquerdo" class="parte braco-esquerdo">
+                <img src="imagens\bracoesquerdo.png" alt="Braço Direito" class="parte braco-direito">
+                <img src="imagens\pernadireita.png" alt="Perna Esquerda" class="parte perna-esquerda">
+                <img src="imagens\pernaesquerda.png" alt="Perna Direita" class="parte perna-direita">
+            </div>
+        </section>
+        <section >
+            <div id="escolhaletra">
+                <label for="letra">Escolha uma letra: </label>
+                <input type="text" name="letra" id="letra">
+                <button type="button" class="testar" id="botao" onclick="verificar()">Testar</button>
+            </div>
+            <div id="palavraOculta">
+    
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
